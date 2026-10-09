@@ -1,0 +1,150 @@
+/* 1.Estilos generales de la pagina*/
+body {
+    font-family: Arial, sans-serif; /*tipo de letra*/
+    margin: 0; /*margen*/
+    padding: 0;
+    background-color: #3d4b35; /*color de fondo*/
+    color:#ffc582; /*color del texto*/
+}
+/* Encabezado (header) */
+header{
+    background-color: #39443d;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffc582;
+}
+
+/*3. Menu de navegacion */
+nav {
+    background-color: #ffc582; /*Fondo de la barra de menu */
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none; /*Quitar viretas de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* pone los elementos en fila, uno al lado del otro */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(55, 82, 55);
+    text-decoration: none; /*Quitar el subrayado del enlace */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /*subraya el enlace al pasar el mouse */
+}
+
+/* 4. contenedor principal */
+.contenedor{
+    display: flex; /* Activa el modo flex */
+    flex-wrap: wraps; /* permite que las filas se adapten segun el tamaño de la pantalla */
+    gap: 20px; /* Espacio entre la seccion y el aside */
+    padding: 20px; 
+}
+
+/* 5. Sección principal (columna ancha) */
+.contenedor section {
+    flex: 3;                /* ocupa más espacio que el aside */
+    background-color: #445846;
+    padding: 15px;
+    border-radius: 20px;
+ }
+/* 6. Aside (columna angosta, contenido secundario) */
+.contenedor aside {
+    flex: 1;                /* ocupa menos espacio que la sección */
+    background-color: #445846;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* 7. Artículos dentro de la sección */
+article {
+    margin-bottom: 20px;
+}
+
+/* 8. Imágenes: que nunca se salgan de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* 7. Artículos dentro de la sección */
+article {
+    margin-bottom: 20px;
+}
+
+/* 8. Imágenes: que nunca se salgan de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 9. Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* une los bordes de las celdas */
+    margin-top: 10px;
+}
+
+th, td {
+    border: 2px solid rgb(180, 161, 106);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color:  #3d4b35;
+}
+
+
+
+
+
+/* 10. Formulario de contacto */
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 5px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background-color: lightblue;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #839e8f;
+}
+
+/* 11. Pie de página (footer) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+
+
